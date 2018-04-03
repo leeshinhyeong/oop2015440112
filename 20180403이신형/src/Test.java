@@ -6,11 +6,20 @@ public class Test {
 		Point p;
 		p = new Point(); //point 객체 생성 및 레퍼런스 p에 저장
 		
-		p.x = 1.0;
-		p.y = 1.0;
+		//객체의 필드 접근
+//		p.x = 1.0;
+//		p.y = 1.0;
+		
+		double temp = 1.0;
+		
+		p.setX(temp); //접근자를 사용한   필드 설정
+		System.out.println("temp = " + temp);
+		p.setY(temp); 
 		
 		
-		System.out.println(p.distance());
+		//System.out.println(p.getX());
+		
+		//System.out.println(p.distance()); //p객체의 distance
 
 	}
 
